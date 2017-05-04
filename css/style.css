@@ -1,3 +1,9 @@
 body {
-    background-color: #777777;
+    background-color: snow;
+
+}
+
+.footer-msg {
+    text-align: center;
+    text-decoration-style: solid;
 }
