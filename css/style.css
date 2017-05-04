@@ -7,3 +7,23 @@ body {
     text-align: center;
     text-decoration-style: solid;
 }
+
+/* The animation code */
+@keyframes example {
+    from {background-color: gray;}
+    to {background-color: snow;}
+}
+
+/* The element to apply the animation to */
+.animate {
+    background-color: snow;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+.about-me {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
