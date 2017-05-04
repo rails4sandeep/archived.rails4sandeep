@@ -27,3 +27,10 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.quora-post {
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border: 10px;
+}
