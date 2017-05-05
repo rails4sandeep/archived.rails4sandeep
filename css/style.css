@@ -11,6 +11,11 @@ body {
     text-decoration-style: solid;
 }
 
+.footer {
+    margin: 10px;
+    padding: 10px;
+    border: 20px;
+}
 /* The animation code */
 @keyframes example {
     from {background-color: gray;}
