@@ -1,6 +1,9 @@
 body {
     background-color: snow;
-
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .footer-msg {
@@ -40,4 +43,17 @@ body {
     margin: 10px;
     padding: 10px;
     border: 10px;
+}
+
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+#map {
+    margin: 0;
+    padding: 0;
+    height: 800px;
+    width: 800px;
+}
+
+#iss {
+    text-align: center;
 }

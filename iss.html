@@ -13,10 +13,11 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
 </head>
 <body>
-
-
 
 <div class="container-fluid">
     <div class="row">
@@ -35,7 +36,7 @@
                             <a href="index.html">Home</a>
                         </li>
                         <li>
-                            <a class="active" href="projects.html">Projects</a>
+                            <a href="projects.html">Projects</a>
                         </li>
                         <li>
                             <a href="#">CV</a>
@@ -44,10 +45,10 @@
                             <a href="quora.html">Quora</a>
                         </li>
                         <li>
-                            <a class="active" href="twitter.html">Twitter</a>
+                            <a href="twitter.html">Twitter</a>
                         </li>
                         <li>
-                            <a href="iss.html">ISS</a>
+                            <a class="active" href="iss.html">ISS</a>
                         </li>
                     </ul>
                 </div>
@@ -56,28 +57,32 @@
         </div>
     </div>
 </div>
+
 <div class="container-fluid projects">
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzdijugIeGsRVS3BX5-9j1jQQsD9OvdjY&callback=initMap">
+    </script>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-2">
-            </div>
-            <div class="col-md-8">
-                <a type="button" class="btn btn-default btn-block btn-info btn-lg" href="https://www.npmjs.com/package/snuze">snuze</a>
-            </div>
-            <div class="col-md-2">
+            <div class="col-md-12">
+                <h3 id="iss">Current location of International Space Station</h3>
             </div>
         </div>
     </div>
-</div>
-<div class="container-fluid projects">
     <div class="container-fluid">
+        <div class="col-md-2">
+            <div>
+            </div>
+        </div>
         <div class="row">
-            <div class="col-md-2">
-            </div>
             <div class="col-md-8">
-                <a type="button" class="btn btn-default btn-block btn-info btn-lg" href="https://www.npmjs.com/package/filter-coffee">filter-coffee</a>
+                <div>
+                    <div id="map"></div>
+                </div>
             </div>
-            <div class="col-md-2">
+        </div>
+        <div class="col-md-2">
+            <div>
             </div>
         </div>
     </div>
@@ -121,9 +126,6 @@
     </div>
 </div>
 
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/scripts.js"></script>
 </div>
 </body>
 </html>
