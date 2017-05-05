@@ -3,14 +3,14 @@ var res;
 var latitude,longitude;
 
 $( document ).ready(function() {
-    $.getJSON("http://api.open-notify.org/iss-now.json", function (data) {
+    $.getJSON("https://api.wheretheiss.at/v1/satellites/25544", function (data) {
             $.each(data, function (index, element) {
                 res = data;
-                latitude = res.iss_position.latitude;
-                longitude = res.iss_position.longitude;
+                latitude = res.latitude;
+                longitude = res.longitude;
                 console.log("latitude: " + Number(latitude));
                 console.log("longitude: " + Number(longitude));
-                $('#iss').text("Location of International Space Centre is Latitude:" + latitude + "Longitude " + longitude);
+                $('#iss').text("Location of International Space Centre is Latitude: " + latitude + " Longitude " + longitude);
             });
         });
 });
