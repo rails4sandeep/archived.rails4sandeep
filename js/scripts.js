@@ -1,3 +1,30 @@
+var app = angular.module('sandeepKumar', ["ngRoute"]);
+
+app.config(function($routeProvider) {
+    $routeProvider
+        .when("/", {
+            templateUrl : "partials/_home.html"
+        })
+        .when("/quora", {
+            templateUrl : "partials/quora.html"
+        })
+        .when("/twitter", {
+            templateUrl : "partials/twitter.html"
+        })
+        .when("/iss", {
+            templateUrl : "partials/iss.html"
+        })
+        .when("/projects", {
+            templateUrl : "partials/_home.html"
+        })
+        .when("/cv", {
+            templateUrl : "partials/cv.html"
+        })
+        .otherwise({
+            template : "partials/_home.html"
+        });
+});
+
 var map, infoWindow;
 var res;
 var latitude,longitude;
