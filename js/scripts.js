@@ -15,13 +15,10 @@ app.config(function($routeProvider) {
             templateUrl : "partials/iss.html"
         })
         .when("/projects", {
-            templateUrl : "partials/_home.html"
+            templateUrl : "partials/projects.html"
         })
         .when("/cv", {
-            templateUrl : "partials/cv.html"
-        })
-        .otherwise({
-            template : "partials/_home.html"
+            templateUrl : "partials/_home.html"
         });
 });
 
