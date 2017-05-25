@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<script src="js/angular.js"></script>
-	<script src="js/angular-route.js"></script>
+	<script src="js/angular-route.min.js"></script>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 
@@ -24,9 +24,9 @@
 <body>
 
 	<div ng-app="sandeepKumar">
-		<div ng-include="'_navigation.html'"></div>
+		<div ng-include="'partials/_navigation.html'"></div>
 		<div ng-view></div>
-		<div ng-include="'_footer.html'"></div>
+		<div ng-include="'partials/_footer.html'"></div>
 	</div>
 </body>
 </html>
