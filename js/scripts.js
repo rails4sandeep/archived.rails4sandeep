@@ -1,26 +1,4 @@
-var app = angular.module('sandeepKumar', ["ngRoute"]);
 
-app.config(function($routeProvider) {
-    $routeProvider
-        .when("/", {
-            templateUrl : "partials/_home.html"
-        })
-        .when("/quora", {
-            templateUrl : "partials/quora.html"
-        })
-        .when("/twitter", {
-            templateUrl : "partials/twitter.html"
-        })
-        .when("/iss", {
-            templateUrl : "partials/iss.html"
-        })
-        .when("/projects", {
-            templateUrl : "partials/projects.html"
-        })
-        .when("/cv", {
-            templateUrl : "partials/_home.html"
-        });
-});
 
 var map, infoWindow;
 var res;
@@ -34,11 +12,35 @@ $( document ).ready(function() {
                 longitude = res.longitude;
                 console.log("latitude: " + Number(latitude));
                 console.log("longitude: " + Number(longitude));
-                $('#iss').text("Location of International Space Centre is Latitude: " + latitude + " Longitude " + longitude);
+                $('#iss-status').text("Location of International Space Centre is Latitude: " + latitude + " Longitude " + longitude);
             });
         });
+
+    $('#navigation').load('../partials/_navigation.html');
+    $('#footer').load('../partials/_footer.html');
+    $('#main').load('../partials/_home.html');
+
 });
 
+$( "html").on('click','#projects', function() {
+    $('#main').load('../partials/projects.html');
+});
+
+$( "html").on('click','#quora', function() {
+    $('#main').load('../partials/quora.html');
+});
+
+$( "html").on('click','#twitter', function() {
+    $('#main').load('../partials/twitter.html');
+});
+
+$( "html").on('click','#iss', function() {
+    $('#main').load('../partials/iss.html');
+});
+
+$( "html").on('click','#home', function() {
+    $('#main').load('../partials/_home.html');
+});
 
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {

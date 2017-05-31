@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<script src="js/angular.min.js"></script>
-	<script src="js/angular-route.min.js"></script>
-	<script src="js/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 
 	<script src="js/scripts.js"></script>
@@ -22,11 +20,10 @@
 	<meta name="author" content="LayoutIt!">
 </head>
 <body>
-
-	<div ng-app="sandeepKumar">
-		<div ng-include src="'partials/_navigation.html'"></div>
-		<div ng-view></div>
-		<div ng-include src="'partials/_footer.html'"></div>
+	<div>
+		<div id="navigation"></div>
+		<div id="main"></div>
+		<div id="footer"></div>
 	</div>
 </body>
 </html>
